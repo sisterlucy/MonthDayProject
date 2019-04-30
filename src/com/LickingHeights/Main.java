@@ -22,20 +22,28 @@ public class Main {
                 "But the child born on the Sabbath Day,\n" +
                 "Is fair and wise and good in every way.\n");
         System.out.println("Let's see what day of the of the week you were born on");
-        monthAndDay();
-    }
-    static void monthAndDay(){
-        Scanner keyboard;
         keyboard = new Scanner(System.in);
         System.out.println("What month were you born in? (enter as number)");
-        String month= keyboard.nextLine();
+        String month = (keyboard.nextLine());
         System.out.println("What was the date you were born on?");
-        String date= keyboard.nextLine();
+        String date = (keyboard.nextLine());
         System.out.println("What year were you born in?");
-        String year= keyboard.nextLine();
+        String year = (keyboard.nextLine());
         System.out.println(month);
         System.out.println(date);
         System.out.println(year);
-    }
+        switch (month) {
 
-}
+            case "1":
+            case "3":
+            case "5":
+            case "7":
+            case "8":
+            case "10":
+            case "12":
+                month = String.valueOf(31);
+
+
+        }
+
+    }}
